@@ -7,7 +7,10 @@ stages:
 - stage: __default
   jobs:
   - job: Job
-    pool: 'Agent pool'
+    pool: 
+      name: 'Agent pool'
+      demands:
+        python -equals 2.7
 
     strategy:
       matrix:
