@@ -7,7 +7,7 @@ stages:
 - stage: __default
   jobs:
   - job: Job
-    pool: NewLocalPOOL
+    pool: nombreAgente
 
 trigger:
 - main
